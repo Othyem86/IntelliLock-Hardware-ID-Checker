@@ -54,6 +54,14 @@ internal class Program
             BIOS:      false,
             OS:        true);
 
+        var cpuMainboardHwId = HardwareID.GetHardwareID(
+            CPU:       true,
+            HDD:       false,
+            MAC:       false,
+            Mainboard: true,
+            BIOS:      false,
+            OS:        false);
+
         var fullHwId = HardwareID.GetHardwareID(
             CPU:       true,
             HDD:       true,
@@ -64,13 +72,16 @@ internal class Program
 
         Console.WriteLine("=== HARDWARE IDs ===");
         Console.WriteLine();
-        Console.WriteLine($"CPU:        {cpuHwId}");
-        Console.WriteLine($"HDD:        {hddHwId}");
-        Console.WriteLine($"MAC:        {macHwId}");
-        Console.WriteLine($"Mainboard:  {maiboardHwId}");
-        Console.WriteLine($"BIOS:       {biosHwId}");
-        Console.WriteLine($"OS:         {osHwId}");
-        Console.WriteLine($"FULL:       {fullHwId}");
+        Console.WriteLine($"CPU:            {cpuHwId}");
+        Console.WriteLine($"HDD:            {hddHwId}");
+        Console.WriteLine($"MAC:            {macHwId}");
+        Console.WriteLine($"Mainboard:      {maiboardHwId}");
+        Console.WriteLine($"BIOS:           {biosHwId}");
+        Console.WriteLine($"OS:             {osHwId}");
+        
+        Console.WriteLine();
+        Console.WriteLine($"CPU/Mainboard:  {cpuMainboardHwId}");
+        Console.WriteLine($"FULL:           {fullHwId}");
 
         Console.WriteLine("Press any key to end the program...");
         Console.ReadLine();
