@@ -1,0 +1,16 @@
+<Solution>
+  <Configurations>
+    <Platform Name="Any CPU" />
+    <Platform Name="x64" />
+  </Configurations>
+  <Project Path="IL HW-ID Checker NET Fr 4.8/IL HW-ID Checker NET Fr 4.8.csproj" Id="8127385c-6948-4457-b6cd-843029e7a632">
+    <BuildType Solution="Debug|x64" Project="Release" />
+    <Platform Solution="*|x64" Project="x64" />
+    <Build Solution="*|Any CPU" Project="false" />
+  </Project>
+  <Project Path="IL HW-ID Checker NET8/IL HW-ID Checker NET8.csproj" Id="f53b1606-43f8-4d30-b0f9-99df36eea7e6">
+    <BuildType Solution="Debug|x64" Project="Release" />
+    <Platform Solution="*|x64" Project="x64" />
+    <Build Solution="*|Any CPU" Project="false" />
+  </Project>
+</Solution>
