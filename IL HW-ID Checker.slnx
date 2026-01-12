@@ -13,4 +13,14 @@
     <Platform Solution="*|x64" Project="x64" />
     <Build Solution="*|Any CPU" Project="false" />
   </Project>
+  <Project Path="IL HW-ID Checker WPF NET Fr 4.8/IL HW-ID Checker WPF NET Fr 4.8.csproj" Id="409333b3-7cec-4a9d-ae6f-cdf67869a36e">
+    <Platform Solution="*|x64" Project="x64" />
+    <Build Solution="*|Any CPU" Project="false" />
+    <Build Solution="Debug|x64" Project="false" />
+  </Project>
+  <Project Path="IL HW-ID Checker WPF NET8/IL HW-ID Checker WPF NET8.csproj" Id="ddba6ee9-bedb-45ae-bd68-5f98bbc5ee6c">
+    <Platform Solution="*|x64" Project="x64" />
+    <Build Solution="*|Any CPU" Project="false" />
+    <Build Solution="Debug|x64" Project="false" />
+  </Project>
 </Solution>

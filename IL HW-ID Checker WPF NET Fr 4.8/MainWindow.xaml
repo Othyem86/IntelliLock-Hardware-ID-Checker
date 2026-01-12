@@ -1,0 +1,79 @@
+﻿<Window x:Class="IL_HW_ID_Checker_WPF_NET_Fr_4._8.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        SizeToContent="WidthAndHeight"
+        Title="IL HW-ID Checker .NET Framework 4.8">
+
+    <Window.Resources>
+        <Style TargetType="TextBlock">
+            <Setter Property="Margin" Value="6" />
+        </Style>
+    </Window.Resources>
+
+    <Grid Margin="6">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="Auto" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <!--0 Title-->
+            <RowDefinition Height="Auto" />
+            <!--1 BIOS-->
+            <RowDefinition Height="Auto" />
+            <!--2 CPU-->
+            <RowDefinition Height="Auto" />
+            <!--3 HDD-->
+            <RowDefinition Height="Auto" />
+            <!--4 MAC-->
+            <RowDefinition Height="Auto" />
+            <!--5 Mainboard-->
+            <RowDefinition Height="Auto" />
+            <!--6 OS-->
+            <RowDefinition Height="Auto" />
+            <!--7 CPU / Mainboard-->
+            <RowDefinition Height="Auto" />
+            <!--8 Full-->
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <!--0 Title-->
+        <TextBlock Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" 
+                   FontWeight="Bold" HorizontalAlignment="Center"
+                   Text="HARDWARE IDs .NET Framework 4.8" />
+
+        <!--1 BIOS-->
+        <TextBlock Grid.Row="1" Grid.Column="0" Text="BIOS:" />
+        <TextBlock Grid.Row="1" Grid.Column="1" Name="BiosTextBlock" Text="####-####-####-####-####-####" />
+        
+        <!--2 CPU-->
+        <TextBlock Grid.Row="2" Grid.Column="0" Text="CPU:" />
+        <TextBlock Grid.Row="2" Grid.Column="1" Name="CpuTextBlock" Text="####-####-####-####-####-####" />
+        
+        <!--3 HDD-->
+        <TextBlock Grid.Row="3" Grid.Column="0" Text="HDD:" />
+        <TextBlock Grid.Row="3" Grid.Column="1" Name="HddTextBlock" Text="####-####-####-####-####-####" />
+        
+        <!--4 MAC-->
+        <TextBlock Grid.Row="4" Grid.Column="0" Text="MAC:" />
+        <TextBlock Grid.Row="4" Grid.Column="1" Name="MacTextBlock" Text="####-####-####-####-####-####" />
+        
+        <!--5 Mainboard-->
+        <TextBlock Grid.Row="5" Grid.Column="0" Text="Mainboard:" />
+        <TextBlock Grid.Row="5" Grid.Column="1" Name="MainboardTextBlock" Text="####-####-####-####-####-####" />
+        
+        <!--6 OS-->
+        <TextBlock Grid.Row="6" Grid.Column="0" Text="OS:" />
+        <TextBlock Grid.Row="6" Grid.Column="1" Name="OsTextBlock" Text="####-####-####-####-####-####" />
+        
+        <!--7 CPU / Mainboard-->
+        <TextBlock Grid.Row="7" Grid.Column="0" Text="CPU + Mainboard:"/>
+        <TextBlock Grid.Row="7" Grid.Column="1" Name="CpuMainboardTextBlock" Text="####-####-####-####-####-####" />
+        
+        <!--8 Full-->
+        <TextBlock Grid.Row="8" Grid.Column="0" Text="FULL:" />
+        <TextBlock Grid.Row="8" Grid.Column="1" Name="FullTextBlock" Text="####-####-####-####-####-####" />
+    </Grid>
+</Window>
